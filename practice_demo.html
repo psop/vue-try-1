@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexschool Vue3 demo week1-1</title>
+</head>
+<body>
+    <div id="app">
+        {{ text }}
+        {{ name }}
+        {{ num }}
+        <input type="number" v-model="num">
+        <!-- 指令 -->
+    </div>
+    
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+        // 把資料取出
+        Vue.createApp({
+            // data 資料邏輯(函式） 
+            data: function() {
+                return {
+                    text: '我叫卡斯伯',
+                    name: '小明',
+                    num: 0,
+                }
+            },
+            // methods 方法(物件)
+            methods: {
+
+            },
+            // mounted 生命週期(函式)
+            mounted: function() {
+
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>
